@@ -1,0 +1,28 @@
+name: valuepass workflow
+
+on:
+    workflow_dispatch:
+        inputs:
+            name:
+                description: 'Enter your name'
+                required: true
+                default: 'Biplob'
+
+jobs:
+    getvalue-workflow:
+        runs-on: ubuntu-latest
+        outputs:
+          message: ${{ steps.generate-message.outputs.greeting }}
+        steps:
+            - name: Generate value message
+              id: generate-message
+              run: |
+                echo "greeting=Hello ${{ github.event.inputs.name }}" >> $GITHUB_OUTPUT
+
+    printvalue-workflow:
+        runs-on: ubuntu-latest
+        needs: [getvalue-workflow]
+        steps:
+            - name: Print getting message
+              run: |
+                echo "${{ needs.getvalue-workflow.outputs.message }}"
