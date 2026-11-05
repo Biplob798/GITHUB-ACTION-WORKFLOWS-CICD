@@ -1,0 +1,17 @@
+name: predefined workflow
+on: 
+    workflow_dispatch:
+jobs:
+    predefined-workflow:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: nodejs version
+              run: node -v
+
+            - name: setup nodejs
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20'
+            - name: nodejs version
+              run: node -v
