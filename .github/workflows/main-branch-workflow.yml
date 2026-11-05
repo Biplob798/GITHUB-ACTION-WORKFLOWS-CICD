@@ -9,7 +9,7 @@ jobs:
   first-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: First step
+      - name: Main branch workflow step
         run: |
           echo "Hello World"
           echo "Hello again"

@@ -7,7 +7,7 @@ jobs:
   first-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: First step
+      - name: Manual workflow step
         run: |
           echo "Hello World"
           echo "Hello again"
