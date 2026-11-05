@@ -14,8 +14,8 @@ jobs:
 
 
   second-workflow:
-    needs: [first-workflow]
     runs-on: ubuntu-latest
+    needs: [first-workflow]
     steps:
       - name: Dependent job workflow step
         run: |
@@ -23,8 +23,8 @@ jobs:
           echo "Hello again"
 
   third-workflow:
-    needs: [first-workflow,second-workflow]
     runs-on: ubuntu-latest
+    needs: [first-workflow,second-workflow]
     steps:
       - name: Dependent job workflow step
         run: |
