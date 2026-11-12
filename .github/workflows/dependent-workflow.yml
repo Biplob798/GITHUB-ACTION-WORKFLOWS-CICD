@@ -4,25 +4,25 @@ on:
   workflow_dispatch:
 
 jobs:
-  first-workflow-job:
+  first-Dependent-workflow-job:
     runs-on: ubuntu-latest
     steps:
-      - name: First Workflow Job
+      - name: First Dependent Workflow Job
         run: |
           echo "Hello, First Workflow"
 
-  second-workflow-job:
+  second-Dependent-workflow-job:
     runs-on: ubuntu-latest
-    needs: [first-workflow-job]
+    needs: [first-Dependent-workflow-job]
     steps:
-      - name: Second Workflow Job
+      - name: Second DependentWorkflow Job
         run: |
           echo "Hello, Second Workflow"
 
-  third-workflow-job:
+  third-Dependent-workflow-job:
     runs-on: ubuntu-latest
-    needs: [first-workflow-job, second-workflow-job]
+    needs: [first-Dependent-workflow-job, second-Dependent-workflow-job]
     steps:
-      - name: Third Workflow Job
+      - name: Third Dependent Workflow Job
         run: |
           echo "Hello, Third Workflow"

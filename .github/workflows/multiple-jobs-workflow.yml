@@ -7,7 +7,7 @@ jobs:
   first-Multi-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: Multi job workflow step
+      - name: First Multi job workflow step
         run: |
           echo "Hello Multi Job Workflow"
           echo "Hello again"
@@ -16,7 +16,7 @@ jobs:
   second-Multi-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: Multi job workflow step
+      - name: Second Multi job workflow step
         run: |
           echo "Hello Multi Job Workflow Second Job"
           echo "Hello again"
