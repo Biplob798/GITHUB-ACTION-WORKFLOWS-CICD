@@ -1,0 +1,24 @@
+#   YAML stands for "Yet Another Markup Language." It is a human-readable data serialization language used for configuration files and data exchange between languages with different data structures.
+#   Widely used in DevOps tools (Docker, Kubernetes, Ansible)
+#  Scalars  : These are simple values like strings, integers, and floats. In YAML, scalars can be written without quotes, but quotes can be used to ensure that a value is interpreted as a string.
+#  Lists    : Represented as a sequence of items, each item in a list is preceded by a dash (-) and a space.
+#  Maps     : Also known as associative arrays or dictionaries, maps are represented as a collection of key-value pairs. Each pair is separated by a colon (:) and a space.
+#  Comments : YAML supports comments, which are preceded by a hash symbol (#). Comments are ignored by the parser.
+
+
+# Example: This is a simple example of a YAML file.
+
+# Sample YAML file
+name: John Doe
+age: 30
+married: true
+children:
+  - name: Jane Doe
+    age: 10
+  - name: Jack Doe
+    age: 8
+languages:
+  - English
+  - French
+
+  # https://jsonformatter.org/yaml-parserC:\Users\LENOVO\Documents
