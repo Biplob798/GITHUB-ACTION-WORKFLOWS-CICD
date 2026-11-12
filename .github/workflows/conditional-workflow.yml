@@ -8,7 +8,4 @@ on:
 
 jobs:
   conditional-workflow:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Backend Image
         uses: Biplob798/GITHUB-ACTION-WORKFLOWS-CICD/.github/workflows/reusable-workflow.yml@main
