@@ -17,9 +17,9 @@ jobs:
         run: |
           echo "Uppercase: ${{ matrix.uppercase }}"
 
-      - name: Print Matrix Uppercase
+      - name: Print Matrix lowercase
         run: |
-          echo "Uppercase: ${{ matrix.lowercase }}"
+          echo "lowercase: ${{ matrix.lowercase }}"
 
       - name: Print Matrix All Combinations
         run: |
